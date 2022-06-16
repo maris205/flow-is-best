@@ -61,7 +61,7 @@ if __name__=="__main__":
 
     #step 3， get metadata
     filename = "scripts/get_metadata_safe.cdc"
-    param = [account_address, cadence.UInt64(0)]
+    param = [account_address, cadence.UInt64(2)]
     ret = asyncio.run(run_script(filename, param))
 
     for i in range(0, len(ret.fields)):

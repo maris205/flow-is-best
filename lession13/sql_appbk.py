@@ -17,19 +17,19 @@ import platform
 #数据库
 #带选择数据库功能
 node = platform.node()
-online_nodes = ["n1.appbk.com"] #线上服务器列表
+online_nodes = ["n1.appbk.com","iZj6ccepuz1ebnidz3cwfxZ"] #线上服务器列表
 
 if node in online_nodes: #线上内网
     g_db_host = "127.0.0.1" #线上机器
     g_db_user = "root"
     g_db_pw = "Rootali123!@#"
-    g_db_name = "flow" #数据库名
+    g_db_name = "nft" #数据库名
     g_db_port = 3306
 else: #外网
-    g_db_host = "45.34.121.153" #线上机器
+    g_db_host = "47.242.206.108" #线上机器
     g_db_user = "root"
     g_db_pw = "Rootali123!@#"
-    g_db_name = "flow" #数据库名
+    g_db_name = "nft" #数据库名
     g_db_port = 3306
 
 
